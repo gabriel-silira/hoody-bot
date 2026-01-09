@@ -6,9 +6,9 @@ link do site: https://gabriel-silira.github.io//squeeze-bot/site/?v=999
 
 comandos de moderação
 
-    ban: Bane um usuário (.ban @usuário motivo)
-    kick: Expulsa um usuário (.expulsar @usuário motivo)
-    timeout: Castiga um usuário (.castigo @usuário 5 motivo)
+    ban: Bane um usuário (/ban @usuário motivo)
+    kick: Expulsa um usuário (/kick @usuário motivo)
+    timeout: Castiga um usuário (/timeout @usuário 5 motivo)
 
 comandos de entretenimento
 
