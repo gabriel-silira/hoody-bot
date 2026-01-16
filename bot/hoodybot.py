@@ -22,7 +22,7 @@ bot = commands.Bot(command_prefix="/", intents=intents, help_command=None)
 @bot.event
 async def on_ready():
     SCommands = await bot.tree.sync()
-    print(f"Squeeze online como {bot.user}")
+    print(f"Hoody online como {bot.user}")
     print(f"{len(SCommands)} comandos sincronizados")
 
     for commands in SCommands:
@@ -153,7 +153,7 @@ async def timeout(interact:discord.Interaction, member: discord.Member, minutes:
 
 # comandos de entretenimento
 @bot.tree.command(description="Envia uma saudação")
-async def squeeze(interact:discord.Interaction):
+async def hoody(interact:discord.Interaction):
     await interact.response.send_message(f"Olá, {interact.user.display_name}")
 
 @bot.tree.command(description="Cara ou Coroa")
@@ -225,7 +225,7 @@ async def help(interact:discord.Interaction):
     ]
 
     comandosdiv = [
-        "**squeeze:**Envia uma saudação",
+        "**hoody:**Envia uma saudação",
         "**moeda:** Tira um cara ou coroa",
         "**d6:** Rola um dado de 6 lados",
         "**d20:** Rola um dado de 20 lados",

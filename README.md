@@ -1,4 +1,4 @@
-bot squeeze
+bot hoody
 
 projeto de bot do discord
 
@@ -12,7 +12,7 @@ comandos de moderação
 
 comandos de entretenimento
 
-    squeeze: Envia uma saudação
+    hoody: Envia uma saudação
     moeda: Tira um cara ou coroa
     d6: Rola um dado de 6 lados
     d20: Rola um dado de 20 lados
