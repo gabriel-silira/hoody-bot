@@ -36,7 +36,7 @@ a:hover {
     color: #F5FAFF;
     margin-top: -15px;
     margin-left: 20px;
-    margin-right: 925px;
+    margin-right: 800px;
     font-style: italic;
     height: 60px;
     display: flex;
@@ -47,18 +47,19 @@ a:hover {
     padding-bottom: 2px;
 }
 
-.slr-header {
+.hoody-header {
     align-self: flex-start;
     font-size: 40px;
 }
 
-.dev-header {
+.bot-header {
     align-self: flex-end;
     font-size: 20px;
 }
 
 .conteudo-header-right {
     font-style: italic;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     gap: 20px;
