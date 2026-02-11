@@ -7,6 +7,7 @@ link do site: https://gabriel-silira.github.io/hoody-bot/site/
 comandos de moderação
 
     ban: Bane um usuário (/ban @usuário motivo)
+    unban: Desbane um usuário (/unban @usuário motivo)
     kick: Expulsa um usuário (/kick @usuário motivo)
     timeout: Castiga um usuário (/timeout @usuário 5 motivo)
 

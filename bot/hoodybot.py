@@ -220,6 +220,7 @@ async def hora(interact:discord.Interaction):
 async def help(interact:discord.Interaction):
     comandosmod = [
         "**ban:** Bane um usuário (_/ban @usuário motivo_)",
+        "**unban** Desbane um usuário (_/unban @usuário motivo_)",
         "**kick:** Expulsa um usuário (_/kick @usuário motivo_)",
         "**timeout:** Castiga um usuário (_/timeout @usuário 5 motivo_)",
     ]
