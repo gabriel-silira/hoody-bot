@@ -226,7 +226,7 @@ async def help(interact:discord.Interaction):
 
     comandosdiv = [
         "**hoody:**Envia uma saudação",
-        "**moeda:** Tira um cara ou coroa",
+        "**moeda:** Joga um cara ou coroa",
         "**d6:** Rola um dado de 6 lados",
         "**d20:** Rola um dado de 20 lados",
         "**d100:** Rola um dado de 100 lados",
@@ -235,7 +235,7 @@ async def help(interact:discord.Interaction):
 
     comandosinfo = [
         "**dev:** Mostra o criador do bot",
-        "**servidores:** Em quantos servidores o bot está",
+        "**servidores:** Mostra em quantos servidores o bot está",
         "**info:** Informação aleátoria sobre o bot",
         "**ping:** Devolve o ping do bot",
         "**data:** A data atual (GMT-3)",

@@ -10,10 +10,10 @@ comandos de moderação
     kick: Expulsa um usuário (/kick @usuário motivo)
     timeout: Castiga um usuário (/timeout @usuário 5 motivo)
 
-comandos de entretenimento
+comandos de diversão
 
     hoody: Envia uma saudação
-    moeda: Tira um cara ou coroa
+    moeda: Joga um cara ou coroa
     d6: Rola um dado de 6 lados
     d20: Rola um dado de 20 lados
     d100: Rola um dado de 100 lados
@@ -22,8 +22,8 @@ comandos de entretenimento
 comandos de informação
 
     dev: Mostra o criador do bot
-    servidores: em quantos servidores o bot está
-    info: informação aleátoria sobre o bot
+    servidores: Mostra em quantos servidores o bot está
+    info: Informação aleátoria sobre o bot
     ping: Devolve o ping do bot
     data: A data atual (GMT-3)
     hora: A hora atual (GMT-3)
