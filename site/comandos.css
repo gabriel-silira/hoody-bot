@@ -111,6 +111,18 @@ a:hover {
     margin: 32px 128px;
 }
 
+.comandos-div comando-label {
+    font-size: 40px;
+}
+
+.comandos-div comando-descricao {
+    font-size: 20px;
+}
+
+.comandos-div comando-ex {
+    font-size: 30px;
+}
+
 .comandos-ex {
     color: #F5FAFF;
     display: flex;
