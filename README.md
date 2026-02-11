@@ -1,5 +1,7 @@
 bot hoody
 
+versão 1.0
+
 projeto de bot do discord
 
 link do site: https://gabriel-silira.github.io/hoody-bot/site/
