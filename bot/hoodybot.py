@@ -191,6 +191,10 @@ async def piadas(interact:discord.Interaction):
 async def dev(interact:discord.Interaction):
     await interact.response.send_message("Feito por SLRDev, discord: **oliveira__.**")
 
+@bot.tree.command(description="Link do site")
+async def site(interact:discord.Interaction):
+    await interact.response.send_message("https://gabriel-silira.github.io/hoody-bot/site/")
+
 @bot.tree.command(description="Quantos servidores o bot está")
 async def servidores(interact:discord.Interaction):
     svs = len(bot.guilds)

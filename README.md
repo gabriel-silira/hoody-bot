@@ -24,7 +24,9 @@ comandos de diversão
 
 comandos de informação
 
+    help: Envia a Embed de help com os comandos do bot
     dev: Mostra o criador do bot
+    site: Link do site
     servidores: Mostra em quantos servidores o bot está
     info: Informação aleátoria sobre o bot
     ping: Devolve o ping do bot
