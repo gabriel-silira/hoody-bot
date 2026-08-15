@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Um bot para moderação">
     <title>Bot Hoody</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="website icon" type="png" href="images/Avatar.png">
 </head>
+
 <body>
     <section class="section-inicial" id="home">
         <header>
@@ -19,10 +22,18 @@
                 <div class="conteudo-header-right">
                     <h3 class="home-header"><a class="anchor-header" href="index.html">Home</a></h3>
                     <h3 class="comandos-header"><a class="anchor-header" href="comandos.html">Comandos</a></h3>
-                    <h3 class="discord-header"><a class="anchor-header" href="https://discord.gg/m5nX4g4tAV" target="_blank">Discord</a></h3>
-                    <h3 class="contact-header"><a class="anchor-header" href="https://wa.me/19996587333" target="_blank">Contato</a></h3>
-                    <h3 class="code-header" target="_blank"><a class="anchor-header" href="https://github.com/gabriel-silira/hoody-bot" target="_blank">Código</a></h3>
+                    <h3 class="discord-header"><a class="anchor-header" href="https://discord.gg/m5nX4g4tAV"
+                            target="_blank">Discord</a></h3>
+                    <h3 class="contact-header"><a class="anchor-header" href="https://wa.me/19996587333"
+                            target="_blank">Contato</a></h3>
+                    <h3 class="code-header" target="_blank"><a class="anchor-header"
+                            href="https://github.com/gabriel-silira/hoody-bot" target="_blank">Código</a></h3>
                 </div>
+                <button class="menu-button" id="menuButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </header>
         <main>
@@ -33,14 +44,24 @@
                 <div class="conteudo-bot">
                     <h1><strong>Hoody Bot</strong></h1>
                     <p>Um bot de discord desenvolvido para moderação e diversão.</p>
-                    <a href="https://discord.com/oauth2/authorize?client_id=1446697773284987015&permissions=268435456&integration_type=0&scope=bot" target="_blank" rel="noopener noreferrer">Adicionar o Bot</a>
+                    <a href="https://discord.com/oauth2/authorize?client_id=1446697773284987015&permissions=268435456&integration_type=0&scope=bot"
+                        target="_blank" rel="noopener noreferrer">Adicionar o Bot</a>
                 </div>
             </div>
             <div class="conteudo-bot-desc">
                 <a href="comandos.html">Comandos do Bot</a>
             </div>
     </section>
-        </main>
-        <footer></footer>
+    </main>
+    <footer></footer>
+    <script>
+    const menuButton = document.getElementById("menuButton");
+    const menu = document.querySelector(".conteudo-header-right");
+
+    menuButton.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+</script>
 </body>
+
 </html>

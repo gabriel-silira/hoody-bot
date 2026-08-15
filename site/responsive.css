@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+
+    .conteudo-header {
+        gap: 0px;
+    }
+
+    .conteudo-principal {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 80px;
+    }
+    
+    .avatar img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .conteudo-bot {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .menu-button {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-button span {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        border-radius: 3px;
+    }
+
+    .conteudo-header-right {
+        display: none;
+    }
+
+    .conteudo-header-right.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

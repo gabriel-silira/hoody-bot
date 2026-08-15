@@ -25,8 +25,11 @@ async def on_ready():
     print(f"Hoody online como {bot.user}")
     print(f"{len(SCommands)} comandos sincronizados")
 
-    for commands in SCommands:
-        print(f"Comando sincronizado - /{commands.name}")
+    codigo = input("caso queira ver os comandos sincronizados digite a senha: ")
+    if codigo == "slr":
+
+        for commands in SCommands:
+            print(f"Comando sincronizado - /{commands.name}")
 
 # comandos de moderação
 @bot.tree.command(description="Comando de Banimento")

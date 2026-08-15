@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Science+Gothic:wght@100..900&family=Sora:wght@100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Science+Gothic:wght@100..900&family=Sora:wght@100..800&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+}
+
+:root {
+    --primary: #0082ff;
+    --light: #F5FAFF;
 }
 
 html {
@@ -20,7 +24,7 @@ a:hover {
 }
 
 .conteudo-header {
-    color: #F5FAFF;
+    color: var(--light);
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -29,11 +33,11 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
     padding: 15px;
-    border-bottom: 3px solid #F5FAFF;
+    border-bottom: 3px solid var(--light);
 }
 
 .conteudo-header-left {
-    color: #F5FAFF;
+    color: var(--light);
     margin-top: -15px;
     margin-left: 20px;
     margin-right: 800px;
@@ -70,7 +74,7 @@ a:hover {
 }
 
 .anchor-header {
-    color: #F5FAFF;
+    color: var(--light);
 }
 
 .section-secundaria {
@@ -81,7 +85,7 @@ a:hover {
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #F5FAFF;
+    color: var(--light);
 }
 
 .comandos-all {
@@ -90,7 +94,7 @@ a:hover {
 }
 
 .divisoes-titulo {
-    color: #F5FAFF;
+    color: var(--light);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -99,16 +103,16 @@ a:hover {
 }
 
 .comandos-div {
-    color: #F5FAFF;
+    color: var(--light);
     display: flex;
     flex-direction: column;
-    border: 3px solid #0082ff;
+    border: 3px solid var(--primary);
     border-radius: 32px;
     background-color: rgba(25, 25, 25, 0.8);
     font-size: 24px;
     font-family: "Oswald", sans-serif;
     padding: 12px;
-    margin: 32px 128px;
+    margin: 32px 256px;
 }
 
 .comandos-div comando-label {
@@ -124,12 +128,11 @@ a:hover {
 }
 
 .comandos-ex {
-    color: #F5FAFF;
+    color: var(--light);
     display: flex;
     flex-direction: column;
-    border: 3px solid #0082ff;
+    border: 3px solid var(--primary);
     border-radius: 200px;
-    background-color: rgba(130, 130, 130, 0.5);
     font-size: 24px;
     font-family: "Oswald", sans-serif;
     padding: 12px;
