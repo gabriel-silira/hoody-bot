@@ -1,152 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Science+Gothic:wght@100..900&family=Sora:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Science+Gothic:wght@100..900&family=Sora:wght@100..800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 :root {
-    --primary: #0082ff;
-    --light: #F5FAFF;
+  --primary: #0082ff;
+  --light: #f5faff;
 }
 
 html {
-    scroll-behavior: smooth;
-    Scrollbar-width: none;
-    height: 100%;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  height: 100%;
 }
 
 a:hover {
-    display: inline-block;
-    animation: pulsar1 3s infinite;
+  display: inline-block;
+  animation: pulsar1 3s infinite;
 }
 
 .conteudo-header {
-    color: var(--light);
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 15px;
-    border-bottom: 3px solid var(--light);
+  color: var(--light);
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 3px solid var(--light);
 }
 
 .conteudo-header-left {
-    color: var(--light);
-    margin-top: -15px;
-    margin-left: 20px;
-    margin-right: 800px;
-    font-style: italic;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px 25px;
-    padding-top: 4px;
-    padding-bottom: 2px;
+  color: var(--light);
+  margin-top: -15px;
+  margin-left: 20px;
+  margin-right: 800px;
+  font-style: italic;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 25px;
+  padding-top: 4px;
+  padding-bottom: 2px;
 }
 
 .hoody-header {
-    align-self: flex-start;
-    font-size: 40px;
+  align-self: flex-start;
+  font-size: 40px;
 }
 
 .bot-header {
-    align-self: flex-end;
-    font-size: 20px;
+  align-self: flex-end;
+  font-size: 20px;
 }
 
 .conteudo-header-right {
-    font-style: italic;
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+  font-style: italic;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 .anchor-header {
-    color: var(--light);
+  color: var(--light);
 }
 
 .section-secundaria {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(images/Backgroudc.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--light);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(images/Backgroudc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--light);
 }
 
 .comandos-all {
-    padding-bottom: 12px;
-    padding-top: 24px;
+  padding-bottom: 12px;
+  padding-top: 24px;
 }
 
 .divisoes-titulo {
-    color: var(--light);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 32px;
-    font-family: "Oswald", sans-serif;
+  color: var(--light);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 32px;
+  font-family: "Oswald", sans-serif;
 }
 
 .comandos-div {
-    color: var(--light);
-    display: flex;
-    flex-direction: column;
-    border: 3px solid var(--primary);
-    border-radius: 32px;
-    background-color: rgba(25, 25, 25, 0.8);
-    font-size: 24px;
-    font-family: "Oswald", sans-serif;
-    padding: 12px;
-    margin: 32px 256px;
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  border: 3px solid var(--primary);
+  border-radius: 32px;
+  background-color: rgba(25, 25, 25, 0.8);
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  padding: 12px;
+  margin: 32px 256px;
 }
 
 .comandos-div comando-label {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .comandos-div comando-descricao {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .comandos-div comando-ex {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .comandos-ex {
-    color: var(--light);
-    display: flex;
-    flex-direction: column;
-    border: 3px solid var(--primary);
-    border-radius: 200px;
-    font-size: 24px;
-    font-family: "Oswald", sans-serif;
-    padding: 12px;
-    margin: 8px;
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  border: 3px solid var(--primary);
+  border-radius: 200px;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  padding: 12px;
+  margin: 8px;
 }
 
 @keyframes pulsar1 {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes pulsar2 {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

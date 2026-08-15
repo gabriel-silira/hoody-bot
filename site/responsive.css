@@ -1,50 +1,103 @@
 @media (max-width: 768px) {
+  :root {
+    --primary: #0082ff;
+    --secundary: #2aaaff;
+    --light: #f5faff;
+  }
 
-    .conteudo-header {
-        gap: 0px;
-    }
+  a:hover {
+    display: inline-block;
+    animation: none;
+  }
 
-    .conteudo-principal {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 80px;
-    }
-    
-    .avatar img {
-        width: 200px;
-        height: 200px;
-    }
+  .conteudo-header {
+    gap: 0px;
+  }
+  .conteudo-header-right {
+    display: none;
+  }
 
-    .conteudo-bot {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-right: 0px;
-    }
+  .dropdown {
+    display: block;
+    position: relative;
+  }
 
-    .menu-button {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
+  .menu-button {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+  }
 
-    .menu-button span {
-        width: 25px;
-        height: 3px;
-        background-color: white;
-        border-radius: 3px;
-    }
+  .menu-button span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--light);
+    border-radius: 3px;
+  }
 
-    .conteudo-header-right {
-        display: none;
-    }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: -5px;
+    width: 110px;
+    background-color: var(--primary);
+    border: 1px solid var(--secundary);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    z-index: 9999;
+    flex-direction: column;
+    padding: 10px 0;
+    list-style: none;
+  }
 
-    .conteudo-header-right.active {
-        display: flex;
-        flex-direction: column;
-    }
+  .dropdown-menu li {
+    padding: 8px 16px;
+  }
 
+  .dropdown-menu .anchor-header {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+  }
+
+  .dropdown-menu .anchor-header::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: var(--light);
+    border-radius: 50%;
+    margin-right: 8px;
+    position: relative;
+    top: -3px;
+  }
+
+  .dropdown-menu.active {
+    display: flex;
+  }
+
+  .conteudo-principal {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .avatar img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .conteudo-bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0px;
+  }
 }
