@@ -1,10 +1,10 @@
-@media (max-width: 768px) {
-  :root {
-    --primary: #0082ff;
-    --secundary: #2aaaff;
-    --light: #f5faff;
-  }
+:root {
+  --primary: #0082ff;
+  --secundary: #2aaaff;
+  --light: #f5faff;
+}
 
+@media (max-width: 768px) {
   a:hover {
     display: inline-block;
     animation: none;
@@ -13,6 +13,7 @@
   .conteudo-header {
     gap: 0px;
   }
+
   .conteudo-header-right {
     display: none;
   }
@@ -43,7 +44,7 @@
   .dropdown-menu {
     display: none;
     position: absolute;
-    top: 25px;
+    top: 40px;
     left: -5px;
     width: 110px;
     background-color: var(--primary);
@@ -99,5 +100,137 @@
     flex-direction: column;
     justify-content: center;
     margin-right: 0px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  a:hover {
+    display: inline-block;
+    animation: none;
+  }
+
+  .conteudo-header {
+    gap: 300px;
+    padding: 36px 0px;
+  }
+
+  .conteudo-header-right {
+    display: none;
+    font-size: 30px;
+  }
+
+  .dropdown {
+    display: block;
+    position: relative;
+  }
+
+  .menu-button {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .menu-button span {
+    width: 50px;
+    height: 6px;
+    background-color: var(--light);
+    border-radius: 3px;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -5px;
+    width: 200px;
+    background-color: var(--primary);
+    border: 1px solid var(--secundary);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    z-index: 9999;
+    flex-direction: column;
+    padding: 10px 0;
+    list-style: none;
+  }
+
+  .dropdown-menu li {
+    padding: 8px 16px;
+  }
+
+  .dropdown-menu .anchor-header {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+  }
+
+  .dropdown-menu .anchor-header::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--light);
+    border-radius: 50%;
+    margin-right: 8px;
+    position: relative;
+    top: -8px;
+  }
+
+  .dropdown-menu.active {
+    display: flex;
+  }
+
+  .hoody-header {
+    align-self: flex-end;
+    font-size: 64px;
+    line-height: 1;
+  }
+
+  .bot-header {
+    align-self: flex-end;
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .conteudo-principal {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .avatar img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .conteudo-bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0px;
+    margin-top: 20px;
+    gap: 50px;
+  }
+
+  .conteudo-bot h1 {
+    font-size: 80px;
+  }
+
+  .conteudo-bot p {
+    font-size: 36px;
+  }
+
+  .conteudo-bot a {
+    font-size: 48px;
+  }
+
+  .conteudo-bot-desc a {
+    margin-top: 24px;
+    font-size: 48px;
   }
 }
