@@ -88,7 +88,7 @@ a:hover {
   color: var(--light);
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
-    url(images/Backgroundc.png);
+    url(images/BackgroundC.png);
   background-repeat: repeat-y;
   background-position: center top;
   background-size: 100% auto;
