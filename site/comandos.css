@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Oswald", sans-serif;
 }
 
 :root {
@@ -25,30 +26,36 @@ a:hover {
 
 .conteudo-header {
   color: var(--light);
-  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-style: normal;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 15px;
+  padding: 15px 0px;
+  gap: 700px;
   border-bottom: 3px solid var(--light);
 }
 
 .conteudo-header-left {
   color: var(--light);
   margin-top: -15px;
-  margin-left: 20px;
-  margin-right: 800px;
   font-style: italic;
   height: 60px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: 15px 25px;
   padding-top: 4px;
   padding-bottom: 2px;
+}
+
+.dropdown {
+  display: none;
+}
+
+.menu-button {
+  display: none;
 }
 
 .hoody-header {
@@ -67,8 +74,6 @@ a:hover {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 1px;
   padding-bottom: 1px;
 }
@@ -78,13 +83,15 @@ a:hover {
 }
 
 .section-secundaria {
+  font-weight: 400;
+  font-style: normal;
+  color: var(--light);
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url(images/Backgroudc.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  font-family: "Oswald", sans-serif;
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url(images/Backgroundc.png);
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: 100% auto;
   font-weight: 400;
   font-style: normal;
   color: var(--light);
@@ -100,8 +107,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 32px;
-  font-family: "Oswald", sans-serif;
+  font-size: 48px;
 }
 
 .comandos-div {
@@ -111,8 +117,6 @@ a:hover {
   border: 3px solid var(--primary);
   border-radius: 32px;
   background-color: rgba(25, 25, 25, 0.8);
-  font-size: 24px;
-  font-family: "Oswald", sans-serif;
   padding: 12px;
   margin: 32px 256px;
 }
@@ -136,7 +140,6 @@ a:hover {
   border: 3px solid var(--primary);
   border-radius: 200px;
   font-size: 24px;
-  font-family: "Oswald", sans-serif;
   padding: 12px;
   margin: 8px;
 }

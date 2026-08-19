@@ -1,6 +1,6 @@
 bot hoody
 
-versão 1.0
+versão 2.0
 
 projeto de bot do discord
 
@@ -11,7 +11,7 @@ comandos de moderação
     ban: Bane um usuário (/ban (@usúario) (motivo))
     unban: Desbane um usuário (/unban (@usúario) (motivo))
     kick: Expulsa um usuário (/kick (@usúario) (motivo))
-    timeout: Castiga um usuário (/timeout (@usúario) (tempo em minutos) (motivo))
+    timeout: Castiga um usuário (/timeout (@usúario) (tempo em minutos, 0 para remover o timeout) (motivo))
 
 comandos de diversão
 

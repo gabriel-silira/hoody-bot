@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Oswald", sans-serif;
 }
 
 :root {
@@ -31,14 +32,12 @@ a:hover {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .conteudo-header {
   color: var(--light);
-  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-style: normal;
   display: flex;
