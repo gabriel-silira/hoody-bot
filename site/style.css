@@ -19,11 +19,6 @@ html {
   scrollbar-width: none;
 }
 
-a:hover {
-  display: inline-block;
-  animation: pulsar1 3s infinite;
-}
-
 .section-inicial {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
@@ -94,6 +89,22 @@ a:hover {
   color: var(--light);
 }
 
+.conteudo-header-right .anchor-header,
+.footer-nav a,
+.footer-bottom a {
+  display: inline-block;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.conteudo-header-right .anchor-header:hover,
+.footer-nav a:hover,
+.footer-bottom a:hover {
+  color: var(--secundary);
+  transform: translateX(4px);
+}
+
 .conteudo-principal {
   display: flex;
   flex-direction: row;
@@ -155,6 +166,163 @@ h1 {
   border-radius: 16px;
   justify-content: center;
   padding: 12px 24px;
+}
+
+.conteudo-bot a,
+.conteudo-bot-desc a,
+.footer-cta {
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.conteudo-bot a:hover,
+.conteudo-bot-desc a:hover,
+.footer-cta:hover {
+  animation: none;
+  background-color: var(--secundary);
+  box-shadow: 0 6px 18px rgba(0, 130, 255, 0.35);
+  transform: translateY(-3px);
+}
+
+.site-footer {
+  position: relative;
+  overflow: hidden;
+  color: var(--light);
+  background:
+    radial-gradient(
+      1200px 500px at 50% -10%,
+      rgba(0, 130, 255, 0.18),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #050b18 0%, #01050c 100%);
+  border-top: 1px solid rgba(42, 170, 255, 0.45);
+  box-shadow: 0 -12px 40px rgba(0, 130, 255, 0.12);
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(1.5px 1.5px at 20% 20%, var(--light) 100%, transparent),
+    radial-gradient(1.5px 1.5px at 70% 60%, var(--light) 100%, transparent),
+    radial-gradient(1px 1px at 40% 85%, var(--secundary) 100%, transparent),
+    radial-gradient(1px 1px at 90% 30%, var(--light) 100%, transparent),
+    radial-gradient(1.5px 1.5px at 55% 10%, var(--secundary) 100%, transparent),
+    radial-gradient(1px 1px at 10% 70%, var(--light) 100%, transparent);
+  background-repeat: repeat;
+  background-size: 320px 320px;
+  opacity: 0.55;
+}
+
+.site-footer::after {
+  content: none;
+}
+
+.footer-content,
+.footer-bottom {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 1fr;
+  gap: 64px;
+  padding: 64px 0 52px;
+}
+
+.footer-brand-name {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  width: max-content;
+  color: var(--light);
+  font-style: italic;
+  line-height: 1;
+}
+
+.footer-brand-name .hoody-header {
+  align-self: flex-start;
+  margin: 0;
+  color: var(--light);
+  font-size: 40px;
+}
+
+.footer-brand-name .bot-header {
+  align-self: flex-end;
+  margin: 0;
+  color: var(--light);
+  font-size: 20px;
+}
+
+.footer-brand p,
+.footer-connect p {
+  max-width: 280px;
+  margin-top: 16px;
+  color: rgba(245, 250, 255, 0.72);
+  font-family: "Sora", sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.footer-nav h2,
+.footer-connect h2 {
+  margin-bottom: 16px;
+  color: var(--light);
+  font-size: 21px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.footer-nav a,
+.footer-bottom a {
+  color: rgba(245, 250, 255, 0.78);
+  font-family: "Sora", sans-serif;
+  font-size: 13px;
+}
+
+.footer-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 16px;
+  justify-content: center;
+  color: var(--light);
+  background-color: var(--primary);
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 0 22px;
+  border-top: 1px solid rgba(245, 250, 255, 0.16);
+  color: rgba(245, 250, 255, 0.5);
+  font-family: "Sora", sans-serif;
+  font-size: 11px;
+}
+
+.footer-bottom a {
+  color: rgba(245, 250, 255, 0.5);
+  font-size: 11px;
 }
 
 @keyframes pulsar1 {

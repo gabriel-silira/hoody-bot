@@ -8,7 +8,7 @@
 
 > **Um bot completo para Discord, feito para diversão, moderação e utilidades.**
 
-**Versão:** `2.0.0`
+**Versão:** `2.1.0`
 **Desenvolvido por:** SLR
 
 ---

@@ -279,6 +279,26 @@
     font-size: 48px;
   }
 
+  .footer-content,
+  .footer-bottom {
+    width: min(100% - 48px, 620px);
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 28px;
+    padding: 48px 0 36px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+  }
+
   .section-secundaria {
     font-weight: 400;
     font-style: normal;
@@ -310,5 +330,25 @@
 
   .comandos-div comando-ex {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footer-brand-name {
+    font-size: 36px;
+  }
+
+  .footer-content h2 {
+    margin-bottom: 10px;
+  }
+
+  .footer-connect p {
+    margin-top: 0;
   }
 }

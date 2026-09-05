@@ -19,11 +19,6 @@ html {
   height: 100%;
 }
 
-a:hover {
-  display: inline-block;
-  animation: pulsar1 3s infinite;
-}
-
 .conteudo-header {
   color: var(--light);
   font-weight: 400;
@@ -82,12 +77,24 @@ a:hover {
   color: var(--light);
 }
 
+.conteudo-header-right .anchor-header {
+  display: inline-block;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.conteudo-header-right .anchor-header:hover {
+  color: #2aaaff;
+  transform: translateX(4px);
+}
+
 .section-secundaria {
   font-weight: 400;
   font-style: normal;
   color: var(--light);
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url(images/BackgroundC.png);
   background-repeat: repeat-y;
   background-position: center top;
@@ -142,28 +149,4 @@ a:hover {
   font-size: 24px;
   padding: 12px;
   margin: 8px;
-}
-
-@keyframes pulsar1 {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes pulsar2 {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
