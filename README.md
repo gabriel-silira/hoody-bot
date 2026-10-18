@@ -1,8 +1,8 @@
 # 🤖 Hoody Bot
 
-Bot para Discord com comandos de moderação, diversão e informações, acompanhado de um site responsivo para apresentação e consulta dos comandos.
+Bot para Discord com comandos de moderação, entretenimento e informações, acompanhado de um site responsivo para apresentação e consulta dos comandos.
 
-**Versão:** `2.2.1`
+**Versão:** `2.2.2`
 
 <p align="center">
   <img src="bot/images/Banner%26Avatar.png" alt="Banner do Hoody Bot" width="720">
@@ -20,7 +20,7 @@ No site é possível conhecer o bot, consultar seus 18 comandos e acessar o flux
 
 - **Comandos de barra:** interação pelo menu de comandos do Discord.
 - **Moderação:** banimento, desbanimento, expulsão e timeout.
-- **Diversão:** saudação, cara ou coroa, dados e piadas aleatórias.
+- **Entretenimento:** saudação, cara ou coroa, dados e piadas aleatórias.
 - **Informações:** ajuda, latência, data, hora e dados do bot.
 - **Respostas em embeds:** retorno visual para ações de moderação.
 - **Site responsivo:** páginas de apresentação e comandos adaptadas para desktop, tablet e celular.
@@ -39,7 +39,7 @@ No site é possível conhecer o bot, consultar seus 18 comandos e acessar o flux
 
 Os comandos de moderação verificam as permissões correspondentes do membro que executa a ação. O cargo do Hoody também precisa estar acima do cargo do membro moderado e possuir as permissões necessárias.
 
-## 🎮 Comandos de diversão
+## 🎮 Comandos de entretenimento
 
 | Comando   | Descrição                                                    |
 | --------- | ------------------------------------------------------------ |
@@ -65,12 +65,12 @@ Os comandos de moderação verificam as permissões correspondentes do membro qu
 
 ### Resumo
 
-| Categoria  | Quantidade |
-| ---------- | ---------: |
-| Moderação  |          4 |
-| Diversão   |          6 |
-| Informação |          8 |
-| **Total**  |     **18** |
+| Categoria      | Quantidade |
+| -------------- | ---------: |
+| Moderação      |          4 |
+| Entretenimento |          6 |
+| Informação     |          8 |
+| **Total**      |     **18** |
 
 ---
 
