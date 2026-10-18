@@ -1,98 +1,155 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Um bot para moderação">
-    <title>Bot Hoody</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <script src="script.js" defer></script>
-    <link rel="website icon" type="png" href="images/Avatar.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="Conheça o Hoody Bot: comandos de moderação, diversão e utilidades para servidores do Discord.">
+    <meta name="theme-color" content="#050b18">
+    <title>Hoody Bot — Moderação e diversão no Discord</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Sora:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <script src="script/script.js" defer></script>
+    <link rel="icon" type="image/png" href="images/Avatar.png">
 </head>
 
-<body>
-    <section class="section-inicial" id="home">
-        <header>
-            <div class="conteudo-header">
-                <div class="conteudo-header-left">
-                    <h2 class="hoody-header">Hoody</h2>
-                    <h3 class="bot-header">Bot</h3>
-                </div>
-                <div class="conteudo-header-right">
-                    <h3 class="home-header"><a class="anchor-header" href="index.html">Home</a></h3>
-                    <h3 class="comandos-header"><a class="anchor-header" href="comandos.html">Comandos</a></h3>
-                    <h3 class="discord-header"><a class="anchor-header" href="https://discord.gg/m5nX4g4tAV"
-                            target="_blank">Discord</a></h3>
-                    <h3 class="contact-header"><a class="anchor-header" href="https://wa.me/19996587333"
-                            target="_blank">Contato</a></h3>
-                    <h3 class="code-header"><a class="anchor-header" href="https://github.com/gabriel-silira/hoody-bot"
-                            target="_blank">Código</a></h3>
-                </div>
-                <div class="dropdown">
-                    <button id="menuButton" class="menu-button" type="button" aria-expanded="false">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+<body class="home-page no-js">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <section class="hero-section" id="home">
+        <header class="site-header">
+            <div class="header-container">
+                <a class="brand" href="index.html" aria-label="Hoody Bot — página inicial">
+                    <span class="brand-primary">Hoody</span>
+                    <span class="brand-secondary">Bot</span>
+                </a>
+
+                <nav class="desktop-nav" aria-label="Navegação principal">
+                    <a href="index.html" aria-current="page">Home</a>
+                    <a href="comandos.html">Comandos</a>
+                    <a href="https://discord.gg/m5nX4g4tAV" target="_blank" rel="noopener noreferrer">Discord</a>
+                    <a href="https://wa.me/19996587333" target="_blank" rel="noopener noreferrer">Contato</a>
+                    <a href="https://github.com/gabriel-silira/hoody-bot" target="_blank"
+                        rel="noopener noreferrer">Código</a>
+                </nav>
+
+                <div class="mobile-nav">
+                    <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false"
+                        aria-controls="mobile-menu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
                     </button>
-                    <ul class="dropdown-menu">
-                        <li class="home-header"><a class="dropdown-item anchor-header" href="index.html">Home</a></li>
-                        <li class="comandos-header"><a class="dropdown-item anchor-header"
-                                href="comandos.html">Comandos</a></li>
-                        <li class="discord-header"><a class="dropdown-item anchor-header"
-                                href="https://discord.gg/m5nX4g4tAV" target="_blank">Discord</a></li>
-                        <li class="contact-header"><a class="dropdown-item anchor-header"
-                                href="https://wa.me/19996587333" target="_blank">Contato</a></li>
-                        <li class="code-header"><a class="dropdown-item anchor-header"
-                                href="https://github.com/gabriel-silira/hoody-bot" target="_blank">Código</a></li>
-                    </ul>
+                    <nav class="mobile-menu" id="mobile-menu" aria-label="Navegação móvel">
+                        <a href="index.html" aria-current="page">Home</a>
+                        <a href="comandos.html">Comandos</a>
+                        <a href="https://discord.gg/m5nX4g4tAV" target="_blank"
+                            rel="noopener noreferrer">Discord</a>
+                        <a href="https://wa.me/19996587333" target="_blank" rel="noopener noreferrer">Contato</a>
+                        <a href="https://github.com/gabriel-silira/hoody-bot" target="_blank"
+                            rel="noopener noreferrer">Código</a>
+                    </nav>
                 </div>
             </div>
         </header>
-        <main>
-            <div class="conteudo-principal">
-                <div class="avatar">
-                    <img src="images/Avatar.png" alt="avatar do bot">
+
+        <main id="conteudo">
+            <div class="hero-container">
+                <div class="hero-avatar">
+                    <img src="images/Avatar.png" width="1024" height="1024"
+                        alt="Símbolo do Discord usando capuz e espadas em tons de azul" fetchpriority="high"
+                        decoding="async">
                 </div>
-                <div class="conteudo-bot">
-                    <h1><strong>Hoody Bot</strong></h1>
-                    <p>Um bot de discord desenvolvido para moderação e diversão.</p>
-                    <a href="https://discord.com/oauth2/authorize?client_id=1446697773284987015&permissions=268435456&integration_type=0&scope=bot"
-                        target="_blank" rel="noopener noreferrer">Adicionar o Bot</a>
+
+                <div class="hero-content">
+                    <h1>Hoody Bot</h1>
+                    <p>Moderação, diversão e utilidades para deixar seu servidor mais organizado e participativo.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary"
+                            href="https://discord.com/oauth2/authorize?client_id=1446697773284987015&amp;permissions=268435456&amp;integration_type=0&amp;scope=bot"
+                            target="_blank" rel="noopener noreferrer">Adicionar ao Discord</a>
+                        <a class="button button-secondary" href="comandos.html">Explorar comandos</a>
+                    </div>
                 </div>
             </div>
-            <div class="conteudo-bot-desc">
-                <a href="comandos.html">Comandos do Bot</a>
-            </div>
+        </main>
     </section>
-    </main>
+
+    <section class="trust-section" aria-labelledby="trust-title">
+        <div class="trust-container">
+            <div class="trust-copy">
+                <h2 id="trust-title">Veja o que acontece antes de adicionar</h2>
+                <p>O Discord mostra as permissões solicitadas antes da confirmação. Os comandos de moderação só
+                    funcionam para membros autorizados e quando o cargo do Hoody tem acesso suficiente.</p>
+                <ul class="trust-points">
+                    <li><strong>18 comandos</strong> organizados entre moderação, diversão e informações.</li>
+                    <li><strong>Comandos de barra</strong> com opções visíveis dentro do próprio Discord.</li>
+                    <li><strong>Respostas claras</strong> com resultado, duração e motivo quando necessário.</li>
+                </ul>
+                <a class="text-link" href="comandos.html">Ver todos os comandos e exemplos</a>
+            </div>
+
+            <div class="discord-preview" aria-label="Exemplo de resposta do comando timeout">
+                <div class="preview-header">
+                    <img src="images/Avatar.png" width="48" height="48" alt="" loading="lazy" decoding="async">
+                    <div>
+                        <strong>Hoody</strong>
+                        <span class="bot-badge">BOT</span>
+                        <p>agora</p>
+                    </div>
+                </div>
+                <p class="preview-command"><span>Você executou</span> /timeout @membro 10 spam</p>
+                <div class="preview-response">
+                    <strong>Timeout aplicado</strong>
+                    <p>O usuário entrou em timeout.</p>
+                    <dl>
+                        <div>
+                            <dt>Duração</dt>
+                            <dd>10 minutos</dd>
+                        </div>
+                        <div>
+                            <dt>Motivo</dt>
+                            <dd>spam</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="site-footer">
-        <div class="footer-stars" aria-hidden="true"></div>
         <div class="footer-content">
             <div class="footer-brand">
-                <div class="footer-brand-name">
-                    <h2 class="hoody-header">Hoody</h2>
-                    <h3 class="bot-header">Bot</h3>
-                </div>
+                <a class="brand" href="index.html" aria-label="Hoody Bot — página inicial">
+                    <span class="brand-primary">Hoody</span>
+                    <span class="brand-secondary">Bot</span>
+                </a>
                 <p>Moderação e diversão para deixar seu servidor mais completo.</p>
             </div>
+
             <nav class="footer-nav" aria-label="Navegação do rodapé">
                 <h2>Explorar</h2>
                 <a href="index.html">Início</a>
                 <a href="comandos.html">Comandos</a>
                 <a href="https://discord.gg/m5nX4g4tAV" target="_blank" rel="noopener noreferrer">Discord</a>
             </nav>
+
             <div class="footer-connect">
                 <h2>Na órbita</h2>
                 <p>Quer levar o Hoody para o seu servidor?</p>
-                <a class="footer-cta"
-                    href="https://discord.com/oauth2/authorize?client_id=1446697773284987015&permissions=268435456&integration_type=0&scope=bot"
-                    target="_blank" rel="noopener noreferrer">Adicionar o bot</a>
+                <a class="button button-primary footer-cta"
+                    href="https://discord.com/oauth2/authorize?client_id=1446697773284987015&amp;permissions=268435456&amp;integration_type=0&amp;scope=bot"
+                    target="_blank" rel="noopener noreferrer">Adicionar ao Discord</a>
             </div>
         </div>
+
         <div class="footer-bottom">
-            <span>&copy; 2025 Hoody Bot</span>
+            <span>&copy; <span data-current-year>2026</span> Hoody Bot</span>
             <a href="https://github.com/gabriel-silira/hoody-bot" target="_blank" rel="noopener noreferrer">Código
                 aberto no GitHub</a>
         </div>
