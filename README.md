@@ -2,7 +2,7 @@
 
 Bot para Discord com comandos de moderação, diversão e informações, acompanhado de um site responsivo para apresentação e consulta dos comandos.
 
-**Versão:** `2.2.0`
+**Versão:** `2.2.1`
 
 <p align="center">
   <img src="bot/images/Banner%26Avatar.png" alt="Banner do Hoody Bot" width="720">
